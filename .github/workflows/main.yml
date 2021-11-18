@@ -23,3 +23,7 @@ jobs:
           VALIDATE_CLANG_FORMAT: false
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Super-Linter
+        uses: github/super-linter@v4.8.4
+        
